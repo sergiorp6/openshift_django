@@ -5,7 +5,9 @@ This git repository helps you get up and running quickly w/ a Django
 installation on OpenShift.  The Django project name used in this repo
 is 'mydjangoapp' but you can feel free to change it.  
 
-I've set this up as MySQL 5.5 and included crispyforms (http://django-crispy-forms.readthedocs.org/en/latest/) because they are crispy.
+I've set this up as MySQL 5.5 and included crispyforms (http://django-crispy-forms.readthedocs.org/en/latest/) because they are crispy.  
+
+This isnt the ideal production config, but it will get you up and running pretty quick and includes some basic logic to allow you to run a local instance as well.
 
 Running on OpenShift
 --------------------
