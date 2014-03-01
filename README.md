@@ -1,9 +1,11 @@
-ngo on OpenShift
+Django on OpenShift
 ===================
 
 This git repository helps you get up and running quickly w/ a Django
 installation on OpenShift.  The Django project name used in this repo
 is 'mydjangoapp' but you can feel free to change it.  
+
+I've set this up as MySQL 5.5 and included crispyforms (http://django-crispy-forms.readthedocs.org/en/latest/) because they are crispy.
 
 Running on OpenShift
 --------------------
@@ -42,8 +44,9 @@ At the prompt:
 
     cd app-root/repo/wsgi/mydjangoapp
     manage.py syncdb
+    manage.py collectstatic
 
-That will create the tables and initial values in your database.
+That will create the tables and initial values in your database and grab the static files for the admin app.
 
 That's it. You can now checkout your application at:
 
