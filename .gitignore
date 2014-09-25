@@ -1,0 +1,94 @@
+nstalled.cfg
+bin
+develop-eggs
+dist
+downloads
+eggs
+parts
+src/*.egg-info
+lib
+lib64
+
+Thanks to Jacob Kaplan-Moss
+
+Also I tend to put .svn in since we use several SCM-s where I work.
+share|improve this answer
+	
+answered Sep 15 '10 at 16:21
+Davor Lucic
+11k52954
+	
+6 	 
+	
+Keeping an svn repo in the same tree as your git repo!? What kind of monster would do such a thing? –  Daenyth Sep 15 '10 at 16:37
+   	 
+	
+@Daenyth giggle, well not really, but I tend to find some leftover .svn directories lying around if I get a component from another source (specially in older components) and also I'm quite lazy so I sometimes copy checkouts instead of exporting stuff from SVN. I once even saw a guy actually committing leftover .svn dirs in GIT. You can run into all kind of weird things when working with silly people. –  Davor Lucic Sep 15 '10 at 17:05
+   	 
+	
+Sounds like your team needs to be educated a bit better on how to use their tools... –  Daenyth Sep 15 '10 at 17:41
+1 	 
+	
+Well I am trying to hook them on StackOverflow... :p –  Davor Lucic Sep 15 '10 at 17:46
+1 	 
+	
+I haven't used Buildout yet, but probably will need to someday soon... so I'll put 'em on the list. Thanks! –  ewall Sep 15 '10 at 18:07
+add a comment
+up vote 36 down vote
+	
+
+Github has a great boilerplate .gitignore
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Rope
+.ropeproject
+
+# Django stuff:
+*.log
+*.pot
+
+# Sphinx documentation
+docs/_build/
+
+#Pycharm
+.idea
